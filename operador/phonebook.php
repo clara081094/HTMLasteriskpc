@@ -3,10 +3,7 @@
     include_once '/var/www/html/operador/contacto.php';
     $bd = new Funciones();
     $contactos = $bd->retornarCont();
-<<<<<<< HEAD
     $msm = $_GET['msm'];
-=======
->>>>>>> 129a16e9064e7ae5d174ec33fa642b0699aec5f3
 ?>
 <html>
     <head>
@@ -20,7 +17,6 @@
 
     </head>
     <body>
-<<<<<<< HEAD
 	<?php if($msm!=null){ ?>
         <div id="myMod" class="modal">
         <div class="modal-dialog">
@@ -32,9 +28,6 @@
         </div><?php 
                 header("refresh: 6, url=../phonebook"); 
         }?>
-
-=======
->>>>>>> 129a16e9064e7ae5d174ec33fa642b0699aec5f3
 	<ul class="list-inline">
                 <li><a href="../inicio"><img src="/www/html/bootstrap/img/phonestudio.png"></a></li>
                 <li><div style="background-color:a6af0a; height:1px; width:1400;"></div></li>
@@ -167,7 +160,6 @@
     });
     </script>
 
-<<<<<<< HEAD
    <script type="text/javascript">
 
         $(document).ready(function(){
@@ -175,9 +167,5 @@
         });
 
     </script>
-
-
-=======
->>>>>>> 129a16e9064e7ae5d174ec33fa642b0699aec5f3
 </html>
 <?php ?>

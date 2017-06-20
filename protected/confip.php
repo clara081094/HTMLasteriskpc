@@ -18,11 +18,7 @@ $msm = $_GET['msm'];
         </ul>	
 
 	<?php if($msm!=null){ ?>
-<<<<<<< HEAD
         <div id="myMod" class="modal" data-keyboard="false">
-=======
-        <div id="myMod" class="modal" data-keyboard="false" data-backdrop="static">
->>>>>>> 129a16e9064e7ae5d174ec33fa642b0699aec5f3
         <div class="modal-dialog">
                 <div class="modal-content">
                 <div class="modal-body">        
@@ -30,11 +26,7 @@ $msm = $_GET['msm'];
                 </div></div>
         </div>
         </div><?php 
-<<<<<<< HEAD
 		header("refresh: 1, url=../inicio"); 
-=======
-		header("refresh: 6, url=../inicio"); 
->>>>>>> 129a16e9064e7ae5d174ec33fa642b0699aec5f3
         }?>
 
 	<div class="container"> 
