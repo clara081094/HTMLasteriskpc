@@ -4,10 +4,10 @@ if ($_GET['some_path'])
 {
     $path = $_GET['some_path'];
     $pate=(string)$path;
-    $pate=str_replace(" ", "\ ", $pate);
-    $pate="rm -rf /var/spool/asterisk/confbridge/".$pate;
-    echo $pate;
-    echo shell_exec($pate);
+    /*$pate=str_replace(" ", "\ ", $pate);*/
+    unlink("/var/spool/asterisk/confbridge/".$pate);
+    /*echo $pate;
+    echo shell_exec($pate);*/
     header('Location: '."../conferencias_telefonicas?msm="."Se elimino archivo");
 }
  

@@ -3,12 +3,12 @@ if ($_GET['some_path'])
 {
     $path = $_GET['some_path'];
     $pate=(string)$path;
-    $pate=str_replace(" ", "\ ", $pate);
-    $pate="rm -rf /var/spool/asterisk/voicemail/buzon/22/INBOX/".$pate;
-    echo $pate;
+    /*$pate=str_replace(" ", "\ ", $pate);*/
+    unlink("/var/spool/asterisk/voicemail/buzon/22/INBOX/".$pate);
+    /*echo $pate;
     echo shell_exec($pate);
     $pate=str_replace("wav", "txt", $pate);
-    echo shell_exec($pate);
+    echo shell_exec($pate);*/
     header('Location: '."../reportes_telefonicos?msm="."Se elimino archivo");
 }
 
