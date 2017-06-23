@@ -6,9 +6,9 @@ if ($_GET['some_path'])
     /*$pate=str_replace(" ", "\ ", $pate);*/
     unlink("/var/spool/asterisk/voicemail/buzon/22/INBOX/".$pate);
     /*echo $pate;
-    echo shell_exec($pate);
-    $pate=str_replace("wav", "txt", $pate);
     echo shell_exec($pate);*/
+    $pate=str_replace("wav16", "txt", $pate);
+    unlink("/var/spool/asterisk/voicemail/buzon/22/INBOX/".$pate);
     header('Location: '."../reportes_telefonicos?msm="."Se elimino archivo");
 }
 
@@ -66,6 +66,7 @@ $files = scandir('/var/spool/asterisk/voicemail/buzon/22/INBOX/');
 			 $name = $nombre;
 			 }
 		        else{
+			 $nombre = substr($file,0,-6);
 			 if($nombre === $name){
 		 ?>
 			<li class="list-group-item">
